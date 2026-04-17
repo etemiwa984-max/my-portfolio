@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMedia</title>
+    <link rel="stylesheet" href="style.css">
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <button class="floating-contact-btn" id="floatingContactBtn" title="Contact Us">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+        </svg>
+    </button>
+    
+    <video class="video-background" autoplay muted loop playsinline>
+        <source src="background.mp4" type="video/mp4">
+    </video>
+    
+    <header class="header-nav">
+  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center justify-between">
+    <a class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center lg:items-center lg:justify-center mb-4 md:mb-0">
+      
+      <span class="ml-3 text-xl text-white font-bold">COMedia</span>
+    </a>
+    
+    <button class="hamburger-menu" id="hamburgerMenu">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <line x1="3" y1="12" x2="21" y2="12"></line>
+        <line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
+    </button>
+    
+    <nav class="nav-menu" id="navMenu">
+      <a class="nav-link" href="#home">Home</a>
+      <a class="nav-link" href="#about">About</a>
+      <a class="nav-link" href="#portfolio">Portfolio</a>
+      <a class="nav-link" href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!--section for hero-->
+
+<section class="hero-section" id="home">
+  <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+    <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+      <h1 class="hero-title">WELCOME TO COMEDIA</h1>
+      <p class="hero-description">I specialize in clean, engaging video edits that combine smooth transitions, sharp cuts, and well-timed effects. My editing style focuses on storytelling, ensuring every clip flows naturally while keeping the audience visually hooked.</p>
+    </div>
+    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+      <img class="hero-image" alt="hero" src="comedia.jpg">
+    </div>
+  </div>
+</section>
+
+    <!--section for about me-->
+    <section class="about-section" id="about">
+  <div class="container px-5 py-24 mx-auto flex flex-wrap">
+    <h2 class="about-title" id="about">ABOUT US</h2>
+    <div class="about-content">
+      <p class="about-text">At COMEDIA, I help brands and individuals bring their ideas to life through clean web design and engaging visual content. I specialize in building responsive websites using HTML and CSS, creating digital experiences that are both functional and visually appealing.
+
+Alongside web development, I offer professional video editing and mobile videography services. From smooth transitions to well-paced storytelling, I focus on creating content that captures attention and keeps your audience engaged.
+
+What makes COMEDIA different is the blend of creativity and precision. Every project is handled with attention to detail, clear communication, and a strong focus on delivering results that align with your vision.
+
+Whether you need a website that represents your brand or video content that stands out, COMEDIA is built to deliver quality, consistency, and impact.</p>
+      <div class="flex justify-center items-center md:mt-4 mt-6">
+        <button class="hero-button-primary"><a href="#portfolio">View some of my work</a></button>
+        
+      </div>
+    </div>
+  </div>
+</section>
+<!--section for portfolio-->
+<section class="portfolio-section" id="portfolio">
+  <div class="container px-5 py-24 mx-auto">
+    <h2 class="portfolio-title">My Recent Projects</h2>
+    <div class="portfolio-grid">
+      <div class="portfolio-card">
+        <div class="portfolio-image-container">
+          <video class="portfolio-image" autoplay muted loop playsinline>
+            <source src="game.mp4" type="video/mp4">
+          </video>
+        </div>
+        <h3 class="portfolio-card-title">Reality Reimagined</h3>
+        
+      </div>
+      <div class="portfolio-card">
+        <div class="portfolio-image-container">
+          <video class="portfolio-image" autoplay muted loop playsinline>
+            <source src="edit2.mp4" type="video/mp4">
+          </video>
+        </div>
+        <h3 class="portfolio-card-title">Cuts That Connect</h3>
+       
+      </div>
+      <div class="portfolio-card">
+        <div class="portfolio-image-container">
+          <video class="portfolio-image" autoplay muted loop playsinline>
+            <source src="my edit.mp4" type="video/mp4">
+          </video>
+        </div>
+        <h3 class="portfolio-card-title">Rhythm & Reels</h3>
+    
+      </div>
+    </div>
+  </div>
+</section>
+<div class="section-divider"></div>
+<!--section for contact-->
+<section class="contact-section" id="contact">
+  <div class="container px-5 py-24 mx-auto">
+    <h2 class="contact-title">Get In Touch</h2>
+    <p class="contact-subtitle">Let's collaborate and create something amazing together</p>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <div class="contact-icon phone-icon">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+          </svg>
+        </div>
+        <h3 class="contact-card-title">Phone</h3>
+        <p class="contact-card-text">Call me anytime</p>
+        <a href="tel:+2349122120406" class="contact-link">09122120406</a>
+        <button class="contact-button" onclick="window.location.href='tel:+2349122120406'">Call Now</button>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-icon whatsapp-icon">
+          <svg fill="currentColor" viewBox="0 0 24 24">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004a9.87 9.87 0 00-4.255.949c-1.438.694-2.63 1.776-3.608 3.01-.278.363-.54.75-.782 1.133C2.105 12.402 1.429 14.644 2.19 17.899c.342 1.577.964 3.025 1.848 4.271.393.575.825 1.101 1.287 1.575 1.054 1.087 2.36 1.905 3.748 2.387 2.193.852 4.505.927 6.358.191 1.852-.736 3.33-2.033 4.236-3.61.906-1.577 1.359-3.294 1.359-5.055 0-1.286-.24-2.618-.73-3.846-.491-1.228-1.231-2.317-2.195-3.14-.964-.823-2.102-1.435-3.342-1.823-1.24-.388-2.537-.514-3.829-.352zm8.814-1.969C19.268 1.34 17.187.154 14.783.02 12.38-.115 9.913.738 8.127 2.32c-1.786 1.582-2.983 3.748-3.413 6.05-.43 2.303-.215 4.714.64 6.88.855 2.166 2.35 4.0 4.303 5.27 1.953 1.27 4.262 1.98 6.602 2.032 2.34.05 4.691-.56 6.67-1.787 1.98-1.227 3.525-3.025 4.45-5.103.924-2.078 1.147-4.417.66-6.64-.486-2.223-1.614-4.243-3.23-5.83-1.616-1.587-3.658-2.664-5.824-3.063z"/>
+          </svg>
+        </div>
+        <h3 class="contact-card-title">WhatsApp</h3>
+        <p class="contact-card-text">Message me on WhatsApp</p>
+        <a href="https://wa.me/2349135246043" class="contact-link">+2349135246043</a>
+        <button class="contact-button" onclick="window.location.href='https://wa.me/2349135246043'">Message Now</button>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-icon instagram-icon">
+          <svg fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.69.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1 1 12.324 0 6.162 6.162 0 0 1-12.324 0zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm4.965-10.322a1.44 1.44 0 1 1 2.881.001 1.44 1.44 0 0 1-2.881-.001z"/>
+          </svg>
+        </div>
+        <h3 class="contact-card-title">Instagram</h3>
+        <p class="contact-card-text">Follow me on Instagram</p>
+        <a href="https://instagram.com/yourhandle" class="contact-link">@yourhandle</a>
+        <button class="contact-button" onclick="window.location.href='https://instagram.com/yourhandle'">Follow Now</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<footer class="footer">
+  <div class="container mx-auto px-5 py-12">
+    <div class="footer-content">
+      <div class="footer-section">
+        <div class="footer-logo">
+         
+          <span class="footer-brand">COMedia</span>
+        </div>
+        <p class="footer-tagline">Professional video editing & web design</p>
+      </div>
+      
+      <div class="footer-section">
+        <h4 class="footer-section-title">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h4 class="footer-section-title">Connect</h4>
+        <div class="footer-social">
+          <p class="footer-contact-item">📱 Phone: +1 (234) 567-8900</p>
+          <p class="footer-contact-item">💬 WhatsApp: +1 (234) 567-8900</p>
+          <p class="footer-contact-item">📸 Instagram: @yourhandle</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-divider"></div>
+    
+    <div class="footer-bottom">
+      <p class="footer-copyright">&copy; 2026 COMedia. All rights reserved. | Crafted with creativity and precision.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Hamburger Menu Toggle
+  const hamburgerMenu = document.getElementById('hamburgerMenu');
+  const navMenu = document.getElementById('navMenu');
+  
+  hamburgerMenu.addEventListener('click', function() {
+    navMenu.classList.toggle('active');
+    hamburgerMenu.classList.toggle('active');
+  });
+  
+  // Close menu when a link is clicked
+  const navLinks = navMenu.querySelectorAll('.nav-link');
+  navLinks.forEach(link => {
+    link.addEventListener('click', function() {
+      navMenu.classList.remove('active');
+      hamburgerMenu.classList.remove('active');
+    });
+  });
+
+  // Floating Contact Button
+  const floatingBtn = document.getElementById('floatingContactBtn');
+  floatingBtn.addEventListener('click', function() {
+    document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+  });
+
+  // Show/hide floating button based on scroll
+  window.addEventListener('scroll', function() {
+    if (window.scrollY > 300) {
+      floatingBtn.classList.add('show');
+    } else {
+      floatingBtn.classList.remove('show');
+    }
+  });
+
+  // Intersection Observer for fade-in animation on scroll
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -100px 0px'
+  };
+
+  const observer = new IntersectionObserver(function(entries) {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('fade-in-up');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  // Observe all sections and cards
+  document.addEventListener('DOMContentLoaded', function() {
+    const fadeElements = document.querySelectorAll('.hero-section, .about-section, .portfolio-section, .contact-section, .portfolio-card, .section-divider');
+    fadeElements.forEach(el => {
+      el.classList.add('fade-in-up');
+      observer.observe(el);
+    });
+  });
+</script>
+
+</body>
+</html>
